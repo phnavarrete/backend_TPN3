@@ -29,42 +29,47 @@
 <hr>
     <h1> EJERCICIO 3 </h1>
       <h2 style="color:GREEN">
-      <?php
-      echo "n = $n<br>";
-      if (10<$n OR $n<2) {
-        echo " $n es un numero mayor a 1 y menor a 10<br>";
-      } else {
-        echo " $n NO es un numero mayor a 1 y menor a 10<br>";
-      }
-      ?>
+        <?php
+        $f=2;
+        while ($f <= 100) {
+          echo "$f</p>";
+          $f=$f+2;
+        }
+        ?>
     </h2>
 <hr>
     <h1> EJERCICIO 4 </h1>
-      <h2 style="color:GREEN">
-      <?php
-      $numero1=5;
-      $numero2=2;
-      $suma=$numero1+$numero2;
-      $resta=$numero1-$numero2;
-      $multiplicacion=$numero1*$numero2;
-      $division=$numero1/$numero2;
-      $resto=$numero1%$numero2;
-
-      echo "numero1 = $numero1<br>";
-      echo "numero2 = $numero2<br>";
-      if ($numero1>$numero2) {
-        echo "$suma<br>";
-        echo "$resta<br>";
-      } elseif ($numero1<$numero2) {
-        echo "$multiplicacion<br>"  ;
-        echo "$division<br>";
-        echo "$resto<br>";
-      } else {
-        echo " Los números ingresados son iguales <br>";
-      }
-      ?>
+      <h2 style="color:RED">
+        <?php
+        $f=1;
+        while ($f <= 100) {
+          echo "$f</p>";
+          $f=$f+2;
+        }
+        ?>
+    </h2>
+<hr>
+    <h1> EJERCICIO 5 </h1>
+      <h2 style="color:violet">
+        <?php
+        $r=0;
+        for ($i=1; $i<=20; $i++) {
+        $r=$i+$r;
+        echo "$r<br>";
+        }
+        ?>
+    </h2>
+<hr>
+    <h1> EJERCICIO 6 </h1>
+      <h2 style="color:violet">
+        <?php
+        $r=0;
+        for ($i=2; $i<=20; $i=$i+2) {
+        $r=$i+$r;
+        echo "$r<br>";
+        }
+        ?>
       </h2>
 
-<hr>
   </body>
 </html>
